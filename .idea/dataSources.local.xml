@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="Rails GossipProject: test" uuid="00df8c63-9790-4524-a142-f641c788f617">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+    </data-source>
+    <data-source name="Rails GossipProject: production" uuid="9d00713a-032e-40a8-941c-04fe9fd3e6d4">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <user-name>GossipProject</user-name>
+    </data-source>
+    <data-source name="Rails GossipProject: development" uuid="6adbcea4-13d4-4396-8001-f4e66f187098">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="POSTGRES" exact-version="0" />
+    </data-source>
+  </component>
+</project>
