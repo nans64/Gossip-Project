@@ -1,0 +1,13 @@
+<h1 class='display-3 mb-5'>Bienvenue !</h1>
+<h2>Voici notre liste de nos gossips secrets</h2>
+<div class="card-columns">
+  <% @Gossips.each { |g|%>
+    <div class='card'>
+      <blockquote class="blockquote card-body my-5">
+        <p><%= g.content %></p>
+        <footer class="blockquote-footer"><%= @Users.where(id: g.user_id).take['first_name'] %></footer>
+        <%= link_to "Voir plus", gossip_path(g.id)%>
+      </blockquote>
+    </div>
+  <% } %>
+</div>

@@ -1,0 +1,11 @@
+<h1 class='display-3 mb-5'>Gossip n°<%= params['id'] %></h1>
+<blockquote class="blockquote my-5">
+  <p><%= @g.title %></p>
+  <p><%= @g.content %></p>
+  <h3>Profil de l'auteur :</h3><li>Prénom : <%= @Users.where(id: @g.user_id).take['first_name'] %></li>
+  <li>Nom : <%= @Users.where(id: @g.user_id).take['last_name'] %></li>
+  <li>Email :<%= @Users.where(id: @g.user_id).take['email'] %></li>
+  <li>Age :<%= @Users.where(id: @g.user_id).take['age'] %></li>
+  <footer class="blockquote-footer"><%= @g.created_at %></footer>
+  <a class="nav-link" href="/">Retourner à la page précédente <span class="sr-only">(current)</span></a>
+</blockquote>
