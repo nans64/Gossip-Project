@@ -8,12 +8,16 @@ rails db:seed
 rails server
 http://localhost:3000/ < URL
 
-#welcome/{firstname}
+# welcome/{firstname}
 
 Entrez vous votre prénom dans l'url http://localhost:3000/welcome/{first_name}
 
 remplacez firstname par votre prénom et vous verrez apparaitre une page dynamique avec votre prénom 
 
-#team
+# Team
 
 http://localhost:3000/team
+
+# Contact
+
+http://localhost:3000/contact
